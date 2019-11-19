@@ -21,7 +21,7 @@ function readFile(input) {
 }
 
 function getdata(arr){
-    arr.each(function(item){
+    arr.forEach(function(item){
      $.get('http://ppoz-service-bal-01.prod.egrn:9001/#/administration/details/'+item+'/docs',function(data){
          $.get($(data).find("div .row-data:contains('Заявление 0')").find("a").attr("href"),function(data){
              console.log(data);
