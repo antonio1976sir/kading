@@ -5,8 +5,10 @@ function readFile(input) {
 
   reader.readAsText(file);
 
-  reader.onload = function() {
+  reader.onload = function() {   
     console.log(reader.result);
+    var arr=reader.split("\n");
+    console.log(arr);
   };
 
   reader.onerror = function() {
