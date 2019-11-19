@@ -7,7 +7,7 @@ function readFile(input) {
 
   reader.onload = function() {   
     console.log(reader.result);
-    var arr=reader.split("\n");
+    var arr=reader.result.split("\n");
     console.log(arr);
   };
 
